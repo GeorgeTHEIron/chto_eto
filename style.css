@@ -1,0 +1,809 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s-1 .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+ 
+}
+
+
+
+.s-1 .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1366px;
+    margin-top: 62px;
+}
+
+.s-1 .nav .center p{
+    font-size: 28px;
+    line-height: 30px;
+    color: #756b62;
+    font-weight: 600;
+    font-family: "Cormorant infant Light";
+    padding: 0 140px;
+}
+
+.s-1 .nav .firstitem{
+    font-size: 18px;
+    line-height: 25px;
+    color: #988f87;
+    font-weight: 500;
+    font-family: 'Montserrat Medium';
+    display: flex;
+    
+}
+
+.s-1 .nav .seconditem{
+    display: flex;
+    font-size: 18px;
+    line-height: 25px;
+    color: #988f87;
+    font-weight: 500;
+    font-family: 'Montserrat Medium';   
+    
+}
+
+.s-1 .nav a{
+    text-decoration: none;
+    color: #988f87;
+}
+
+.s-1 .nav .item,.center{
+    padding: 0 80px 0 0;
+}
+
+
+
+
+
+
+
+.s-1 .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+  
+.s-1 .image-left {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: center;
+}
+  
+.s-1 .image-right {
+    position: relative;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    justify-self: center;
+    align-self: center;
+    top: 83px;
+    right: 300px;
+    background-image: url(/background.jpg);
+}
+  
+.s-1 .image-mini {
+    position: relative;
+    top: 112px;
+    left: 155px;
+}
+
+.watermark img{
+    position: absolute;
+    top: 90%;
+    left: 88%;
+    border-radius: 50%;
+}
+
+  
+.s-1 .first-text {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    position: relative;
+    z-index: 1;
+    top: 283px;
+    text-align: left;
+    left: 210px;
+}
+  
+.s-1 .first-text{
+    font-size: 100px;
+    line-height: 90px;
+    color: #756b62;
+    font-weight: 300;
+    font-family: 'Cormorant infant Light';
+}
+
+.s-1 .c-1{
+    margin-top: 190px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.s-1 .c-1 .t-1 p{
+    font-family: 'Cormorant infant Medium';
+    width: 981px;
+    height: 97px;
+    font-size: 55px;
+    line-height: 50px;
+    color: #988f87;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    z-index: 2;
+}
+
+.s-1 .c-1 .t-1 span{
+    font-family: 'Cormorant infant SemiBold';
+    font-style: normal;
+    color: #988f87;
+    text-align: center;
+}
+
+.s-1 .image-container {
+    position: relative;
+    left: 430px;
+    bottom: 50px;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+.s-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 90px;
+    text-align: left;
+}
+
+.s-2 .colection{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: flex-start;
+    text-align: left;
+    margin-bottom: 55px;
+}
+
+.s-2 .colection .width{
+    width: 50px;
+    height: 1px;
+    background-color: #9f968e;
+    margin-right: 21px;
+}
+
+.s-2 .colection p{
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #9f968e;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.s-2 .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 1366px;
+}
+
+.s-2 .image-right{
+    position: absolute;
+    right: 0;
+    
+}
+
+.s-2  .image-left {
+
+}
+  
+.s-2  .image-center {
+    order: 0;
+    margin: 0 20px;
+    padding: 87px;
+    margin-top: 75px;
+}
+
+.s-2 .text-info{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+}
+
+.s-2 .text-info p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #756b62;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.s-2 .circle{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: rgba(241,233,222,0);
+    border: 1px solid  #9f968e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-2 .circle a{
+    color: #9f968e;
+    font-size: 33px;
+}
+
+
+
+
+
+
+
+.s-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 286px;
+}
+
+.s-3 .containers{
+    display: flex;
+    width: 1366px;
+}
+
+.s-3 .containers .t-2{
+    font-size: 55px;
+    line-height: 50px;
+    color: #756b62;
+    font-weight: 500;
+    font-style: italic;
+    font-family: "Cormorant Infant";
+    width: 520px;
+    padding-top: 12px;
+}
+
+.s-3 .containers .t-3{
+    font-size: 24px;
+    line-height: 30px;
+    color: #988f87;
+    font-weight: 600;
+    font-style: italic;
+    font-family: "Cormorant Infant";
+    padding-top: 32px;
+    width: 540px;
+}
+
+.s-3 .history{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: flex-start;
+    text-align: left;
+    
+}
+
+.s-3 .history .width{
+    width: 50px;
+    height: 1px;
+    background-color: #9f968e;
+    margin-right: 21px;
+}
+
+.s-3 .history p{
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #9f968e;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.s-3 .admin{
+    display: flex;
+    align-items: center;
+    padding-top: 42px;
+}
+
+.s-3 .admin .text-info{
+    padding-left: 22px;
+}
+
+.s-3 .admin .t-4{
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: underline;
+    color: #756b62;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.s-3 .admin .t-5{
+    font-size: 18px;
+    line-height: 25px;
+    color: #988f87;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+
+.s-3 .image-containers{
+   position: relative;
+}
+
+.s-3 .image-containers .big{
+    padding-left: 178px;
+}
+
+.s-3 .image-containers .mini{
+    position: absolute;
+    right: 500px;
+    top: 521px;
+}
+
+.s-3 .image-containers .rose{
+    position: absolute;
+    top: 288px;
+    left: 587px;
+}
+
+
+
+
+
+
+
+.s-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 191px;
+}
+
+.s-4 .containers{
+    display: flex;
+    width: 1366px;
+}
+
+.s-4 .item{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-4 .center{
+    padding-left: 83px;
+}
+
+.s-4 .right{
+    padding-left: 20px;
+}
+
+.s-4 .item img{
+    margin-bottom: 25px;
+}
+
+.s-4 .item p{
+    font-size: 24px;
+    line-height: 30px;
+    color: #988f87;
+    font-weight: 600;
+    font-style: italic;
+    font-family: "Cormorant Infant";
+}
+
+.s-4 .item .t-1{
+    width: 333px;
+}
+
+.s-4 .item .t-2{
+    width: 300px;
+}
+
+.s-4 .item .t-3{
+    width: 330px;
+}
+
+
+
+
+
+.s-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 191px;
+}
+
+.s-5 .t-1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-5 .t-1 .t-2{
+    font-size: 160px;
+    line-height: 150px;
+    color: #bdb4ab;
+    font-weight: 500;
+    font-family: "Cormorant Infant";
+    text-align: center;
+    
+}
+
+.s-5 .t-1 .i-1{
+    position: absolute;
+    bottom: 70px;
+}
+
+.s-5 .t-1 .i-1 img{
+    position: relative;
+}
+
+.s-5 .e-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-5 .t-1 .i-1 p{
+    position: absolute;
+    bottom: 50%;
+    font-size: 24px;
+    line-height: 30px;
+    color: #f1e9de;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    width: 490px;
+}
+
+.s-5 .t-1 .i-1 a{
+    position: absolute;
+    bottom: 24%;
+    font-size: 18px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #e5dbd1;
+    font-weight: 500;
+    font-family: "Montserrat";
+    width: 189px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: rgba(98,217,46,0);
+    border: 1px solid #e1d7ce;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.s-6{
+    margin-top: 161px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s-6 .t-1{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #988f87;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+
+.s-6 .t-1 p{
+    padding-left: 12px;
+}
+
+
+.s-6 .image-containers{
+    margin-top: 61px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.s-7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 161px;
+    flex-direction: column;
+}
+
+.s-7 .form{
+    display: flex;
+    align-items: center;
+    width: 1366px;
+    position: absolute;
+    margin-bottom: 312px;
+}
+
+.s-7 img{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.s-7 .t-2{
+    font-size: 55px;
+    line-height: 50px;
+    color: #756b62;
+    font-weight: 500;
+    font-style: italic;
+    font-family: "Cormorant Infant";
+    width: 60%;
+    padding-bottom: 22px;
+}
+
+.s-7 .t-3{
+    font-size: 24px;
+    line-height: 30px;
+    color: #988f87;
+    font-weight: 600;
+    font-style: italic;
+    font-family: "Cormorant Infant";
+    width: 56%;
+}
+
+
+.s-7 .i-1 .wrap-input input{
+    width: 470px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px; /* Необязательно, добавляет небольшой отступ под границей */
+    outline: none; /* Убирает выделение при фокусе */
+    background-color: transparent; /* Убирает фоновый цвет */
+    /* Дополнительные стили по вашему выбору */
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #9f968e;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.s-7 .i-1 .chexboxs{
+    font-size: 18px;
+    line-height: 25px;
+    color: #756b62;
+    font-weight: 500;
+    font-family: "Montserrat";
+    display: flex;
+    align-items: center;
+}
+
+.s-7 .i-1 .chexboxs-2{
+    display: flex;
+    align-items: center;
+}
+
+.chexboxs input[type="checkbox"] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #756b62;
+    border-radius: 50%;
+    outline: none;
+  }
+  
+.chexboxs input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #756b62;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+.chexboxs input[type="checkbox"]:checked::after {
+    opacity: 1;
+}
+
+.chexboxs label{
+    padding-left: 12px;
+}
+
+.chexboxs-2 label{
+    padding-left: 12px;
+}
+
+.chexboxs-2 input[type="checkbox"] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 1px solid #756b62;
+    border-radius: 10%;
+}
+
+.chexboxs-2 input[type="checkbox"]:checked::before {
+    content: "\2713"; /* Символ галочки */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #756b62;
+}
+
+
+.s-7 .c-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.s-7 .c-2{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    line-height: 20px;
+    color: #756b62;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.s-7 a{
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #756b62;
+    font-weight: 500;
+    font-family: "Montserrat";
+    width: 189px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: rgba(98,217,46,0);
+    border: 1px solid #756b62;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: none;
+    margin-bottom: 312px;
+}
+
+.s-8{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.s-8 .image{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.s-8 .containers{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s-8 .containers .c-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1366px;
+}
+
+.s-8 .containers .c-1 .t-1{
+    font-size: 28px;
+    line-height: 30px;
+    color: #f1e9de;
+    font-weight: 600;
+    font-family: "Cormorant Infant";
+}
+
+.s-8 .containers .c-1 .t-2,.t-4,.t-5,.t-6{
+    font-size: 18px;
+    line-height: 25px;
+    color: #9f968e;
+    font-weight: 500;
+    font-family: "Montserrat";
+    padding-top: 20px;
+}
+
+.s-8 .containers .c-1 .t-4,.t-5,.t-6{
+    padding-top: 10px;
+}
+
+.s-8 .containers .c-1 .t-3{
+    font-size: 15px;
+    line-height: 20px;
+    color: #9f968e;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.s-8 .containers .c-1 .t-2{
+    width: 250px;
+}
+
+.s-8 .containers .c-1 .i-1 .t-3{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.s-8 .containers .c-1 .contact {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+  
+.s-8 .containers .c-1 .contact a {
+    display: flex;
+    align-items: center;
+}
+  
+.s-8 .containers .c-1 .contact a img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    background-color: rgba(241, 233, 222, 0);
+    border: 1px solid #9f968e;
+    padding: 15px;
+}
+  
+
